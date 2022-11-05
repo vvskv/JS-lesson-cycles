@@ -55,3 +55,11 @@ while (i < lastElement) {
     message += `${i}${i!=lastElement ? "," : ""}`;
 }
 console.log(message);
+console.log("---------------");
+let message2 = "";
+for(let i=0; i<10; i++) {
+    if(i%2 == 0) {
+        message2+= "," + i;
+    }
+}
+console.log(message2);
