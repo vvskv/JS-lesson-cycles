@@ -25,3 +25,7 @@ if (gender.toLocaleLowerCase() === 'man') {
 if (gender.toLocaleLowerCase() === 'woman') {
     console.log('On the right');
 }
+console.log("----------------");
+const isAdmin = true;
+const typeUserString = isAdmin ? 'Admin' : 'User';
+console.log(`Welcome: ${typeUserString}`);
