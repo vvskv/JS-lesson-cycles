@@ -1,8 +1,24 @@
-const age = 15;
+let age = null;
 const gender = 'wOman';
-if(age > 18) {
-    console.log("You are really old");
+
+// age = parseInt(age);
+age = +age;
+
+if (! isNaN(age)) {
+    if(age > 18) {
+        console.log("You are really old");
+    } else if (age < 18){
+        console.log('You are the child');
+    } else if (age === 18){
+        console.log('You are 18 years old. Congratulations!')
+    } else {
+        console.log('Write your age');
+    }
+} else {
+    console.log('Write correct data');
 }
+
+
 if (gender.toLocaleLowerCase() === 'man') {
     console.log('On the left');
 }
